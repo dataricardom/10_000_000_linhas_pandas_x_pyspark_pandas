@@ -21,6 +21,6 @@ read_json.filter("idade < 20").fetchdf()
 
 # %%
 
-conn.sql("SELECT * FROM read_json LIMIT 10")
+conn.sql("SELECT cidade, avg(idade) AS media_idade FROM read_json GROUP BY cidade ORDER BY avg(idade) DESC")
 
 
