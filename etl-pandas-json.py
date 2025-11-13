@@ -28,7 +28,7 @@ pd_clientes_media_idade.head()
 start = time.time()
 salvar = "media_idade_no_index.csv"
 pd_clientes_csv = pd_clientes_media_idade.to_csv(f"data/{salvar}", index=False)
-print(f"Arquivo .csv salvo com sucesso como {salvar}: {time.time() - start:.2f} segundos")
+print(f"Arquivo .csv salvo com sucesso como: {salvar}: {time.time() - start:.2f} segundos")
 
 
 
