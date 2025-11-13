@@ -58,6 +58,7 @@ print(f"Tempo (PySpark Pandas): {time.time() - start:.2f} segundos")
 |--------------------|------------------|--------------------|--------------|
 | **Pandas**         | 18,71 s | — | Processamento sequencial em memória |
 | **PySpark Pandas** | **1,81 s** | **~10,3× mais rápido** | Aproveitou o paralelismo das 12 threads via Spark |
+| **DuckDB** | **0,3 s** | **~62,37× mais rápido** | DuckDB processa dados em blocos vetorizados (columnar processing), 100% em C++ otimizado. |
 
 ---
 
