@@ -14,6 +14,7 @@ users_data = "./data/clientes.json"
 
 # %%
 start = time.time()
-pd_flights = pd.read_json(users_data, lines=True)
+pd_clientes = pd.read_json(users_data, lines=True)
 print(f"Tempo pyspark.pandas: {time.time() - start:.2f} segundos")
-pd_flights.head()
+pd_clientes.head()
+# %%
