@@ -1,0 +1,24 @@
+[project]
+name = "pandas-databricks-spark"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ricardo Marques",email = "dataricardom@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyspark (>=4.0.1,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pyarrow (>=22.0.0,<23.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
